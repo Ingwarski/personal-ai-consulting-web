@@ -1,6 +1,6 @@
 # Product reset review
 
-13 September 2026. Review, product brief and design only.
+13 September 2026. Historical review of the original system at the source revision cited below. Current replacement requirements are owned by [product-idea.md](product-idea.md) and [prd.md](prd.md); the [candidate inventory](../README.md#compare-the-three-designs) records the current design comparison. Review, product brief and design only.
 
 ## Conclusion
 
@@ -50,4 +50,4 @@ The other resolved tradeoff: “login and work” is the ordinary path, with pre
 
 The current GoDaddy app was identified read-only; the visible Preview revision differs from the reviewed checkout. Attempts to read the existing app's current sign-in/settings tab timed out, so no fresh effective-settings snapshot was obtained. Historical settings are explicitly dated in [model-settings.md](model-settings.md). Database identity/ownership was not verified and no GoDaddy resource was changed.
 
-The next owner decision is the product/design direction shown by the interactive prototype. The later implementation must prove current settings, real research and agent exchanges, mobile interruption/recovery, and the exact GoDaddy data boundary. This review does not declare the old system broken in every case or the proposed backend already operational.
+The outstanding owner decision is the whole-design choice among the three candidates in the current inventory. The later implementation must prove current settings, real research and agent exchanges, mobile interruption/recovery, and the exact GoDaddy data boundary. This review does not declare the old system broken in every case or the proposed backend already operational.

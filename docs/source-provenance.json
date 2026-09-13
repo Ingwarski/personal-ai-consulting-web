@@ -90,7 +90,7 @@
   ],
   "current_brief": {
     "path": "docs/product-idea.md",
-    "sha256": "2c75762cb77db7004865b215d7daa52a6924823008d5908c306f18cab8ad3f03"
+    "sha256": "fc34aca4e41a1c27918b7b81e8f03a02a8c0df4c522ec5b0e6a1d95e7c584180"
   },
   "design_traceability": [
     {
@@ -145,7 +145,7 @@
   ],
   "limits": [
     "Prototype uses fictional data and no live services.",
-    "Original repository source_usage hashes above are historical review evidence. The current SDD manifest owns revision-2 dependencies, state coverage, candidate hashes and review receipts; design approval remains pending.",
+    "Original repository source_usage hashes above are historical review evidence. The current SDD manifest owns current dependencies, state coverage, candidate hashes and review receipts; design approval remains pending.",
     "Historical settings are not fresh saved-setting or entitlement evidence."
   ],
   "current_pipeline_manifest": "forge/sdd-manifest.json"
