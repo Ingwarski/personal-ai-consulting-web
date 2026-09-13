@@ -1,6 +1,6 @@
 # Working in this repository
 
-This repository is the separate browser replacement for Personal AI Consulting Group.
+This repository contains NanoDuck Consulting Group, the separate browser replacement for the legacy Personal AI Consulting Group app.
 
 - Read `docs/product-idea.md` as current intent and `docs/prd.md` as its specification. `docs/review.md` records the original-system review; `docs/architecture.md` is the proposed replacement architecture.
 - Use the installed `to-sdd-pipeline` contract for dependencies and ownership. Each named domain skill owns its document; `to-project-context` owns the context/terms bundle together. Only the orchestrator writes `forge/sdd-manifest.json`. Run the pipeline checker before and after each owner invocation, declare all consumed sources, and revalidate affected downstream owners in order. Later evidence references never become creation prerequisites.
