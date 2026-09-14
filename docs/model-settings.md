@@ -1,6 +1,14 @@
 # Model preservation record
 
-13 September 2026. This is a design/migration reference, not live configuration.
+14 September 2026. This is a model-preservation record and content-free capability evidence, not a saved-settings export or live deployment configuration.
+
+## Current local capability read
+
+On 14 September 2026, the replacement checkout's controlled Codex app-server preflight read the current account/catalog/rate-limit state without starting a model turn, creating a conversation, contacting MySQL or changing GoDaddy. It returned `ready` and listed `gpt-6-astra` with both `xhigh` and `ultra` reasoning efforts. The [U-01 capability matrix](../forge/runs/U-01/phase3-local-preflight-20260914/capability-matrix.json) records the content-free result.
+
+This confirms that the current Codex catalog supports the preserved tuples. It does not independently prove a model invocation at either effort, record actual rate-limit quantities, or replace the required saved/effective-settings read before a target-runtime cutover.
+
+## Preserved settings
 
 The existing live-review report dated **7 September 2026** records:
 
@@ -14,7 +22,7 @@ The existing live-review report dated **7 September 2026** records:
 | Critic reasoning | `ultra` |
 | Speed | `збалансовано` (balanced) |
 
-Source: original repository `forge/runs/U-08/matrix-production-setup-20260906/catalog-and-intake-review.md:1–7`, reviewed at commit `49c7ad9a0b3033e9437e79cd98ed5d35e71cfced`. The date in the folder name is not the report observation date. A second publication preflight record agrees with these values. A fresh saved/effective-settings read was not obtained in this review. Prototype values are illustrative representations of that historical snapshot.
+Source: original repository `forge/runs/U-08/matrix-production-setup-20260906/catalog-and-intake-review.md:1–7`, reviewed at commit `49c7ad9a0b3033e9437e79cd98ed5d35e71cfced`. The date in the folder name is not the report observation date. A second historical publication preflight record agrees with these values. A fresh saved/effective-settings read was not obtained in this review. Prototype values are illustrative representations of that historical snapshot.
 
 **Do not silently change Critic ultra to xhigh.** The code's bootstrap defaults are different: provider default/first model for consultants with null effort, Astra/xhigh for Codex Critic and balanced speed (`src/godaddy/runtime-bootstrap.ts:52–63`). Null means provider default, not medium. Inactive Claude model/effort preferences are unknown and must not be invented from the list of supported candidates.
 
