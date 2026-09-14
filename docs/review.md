@@ -1,6 +1,6 @@
 # Product reset review
 
-13 September 2026. Historical review of the original system at the source revision cited below. Current replacement requirements are owned by [product-idea.md](product-idea.md) and [prd.md](prd.md); the [candidate inventory](../README.md#compare-the-three-designs) records the current design comparison. Review, product brief and design only.
+13 September 2026. Historical review of the original system at the source revision cited below. Current replacement requirements are owned by [product-idea.md](product-idea.md) and [prd.md](prd.md); Electric A v8 was approved on 14 September and local Phase 3 implementation is authorized. The [candidate inventory](../README.md#compare-the-three-designs) preserves the design comparison.
 
 ## Conclusion
 
@@ -48,6 +48,6 @@ The other resolved tradeoff: “login and work” is the ordinary path, with pre
 
 ## Evidence limits and next decision
 
-The current GoDaddy app was identified read-only; the visible Preview revision differs from the reviewed checkout. Attempts to read the existing app's current sign-in/settings tab timed out, so no fresh effective-settings snapshot was obtained. Historical settings are explicitly dated in [model-settings.md](model-settings.md). Database identity/ownership was not verified and no GoDaddy resource was changed.
+The current GoDaddy app was identified read-only; the visible Preview revision differs from the reviewed checkout. The later scoped dashboard audit confirmed the published Node.js 22 project and a managed MySQL inventory of nine Personal Consultant/Matrix-named tables shared by Preview and Published; it did not open row data, values or exports. No database identifier/owner principal was exposed, so this remains dashboard-scoped ownership evidence. No GoDaddy resource was changed. An authenticated content-free read retrieved the active Codex settings for both Head and Critic as Astra/xhigh with Balanced speed; inactive Claude preferences remain unknown. [model-settings.md](model-settings.md) separates this current read from the historical Critic/ultra record.
 
-The outstanding owner decision is the whole-design choice among the three candidates in the current inventory. The later implementation must prove current settings, real research and agent exchanges, mobile interruption/recovery, and the exact GoDaddy data boundary. This review does not declare the old system broken in every case or the proposed backend already operational.
+The owner approved Electric A v8. Local implementation must still prove real research and agent exchanges, mobile interruption/recovery, and the exact GoDaddy data boundary before production claims. This review does not declare the old system broken in every case or the proposed backend already operational.

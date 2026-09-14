@@ -1,14 +1,16 @@
 # Deployment boundary
 
-Design/review only, 13 September 2026. No GoDaddy changes were made.
+Read-only boundary audit updated 14 September 2026. No GoDaddy changes were made.
 
-The existing authenticated GoDaddy dashboard identified **Personal AI Consulting Group**, app ID `wy2v0putg6`, hostname `wy2v0putg6.c35.airoapp.ai`, source `Ingwarski/personal-ai-consulting-group-godaddy`, branch `main`, Node.js 22. The visible Preview tab showed commit `72265acf8b61d8b7f0954f0fdc29b5442a6b7cb5`, inactive Preview and an out-of-sync notice. This is Preview evidence, not a fresh verification of the Published commit or a diagnosis of its runtime.
+The authenticated GoDaddy dashboard identifies **Personal AI Consulting Group**, app ID `wy2v0putg6`, hostname `wy2v0putg6.c35.airoapp.ai`, source `Ingwarski/personal-ai-consulting-group-godaddy`, branch `main`, Node.js 22 and Europe region. On 14 September, the Published surface was healthy at commit `72265acf8b61d8b7f0954f0fdc29b5442a6b7cb5`; Preview remained out of sync with `main`. This is deployment metadata, not a diagnosis of runtime behavior.
 
 The reviewed local checkout is `49c7ad9a0b3033e9437e79cd98ed5d35e71cfced`, on `codex/matrix-connection-20260906`, four commits ahead of its tracked remote at initial inspection. Its clean state does not prove deployment. The old checkout and its Git references were not changed.
 
-The user permits erasure of this app and its database to use the replacement. Their later scope answer keeps this task at review, product brief and design. Therefore erasure is deferred until the replacement phase; it is not required to deliver this design.
+The user permits erasure of this app and its database to use the replacement. This read-only audit does not perform that erasure. Any reset, migration, publication or credential change remains a separately authorized action after the replacement cutover package is ready.
 
-Before the eventual reset, the implementer must read the current model settings without exporting conversation content, verify the selected provider grants can be recovered or reauthorized, and identify the database and exact tables owned solely by this application. This review did not inspect a database identifier or prove that every attached table belongs to this app. No executable DROP statement or deletion command is provided because that boundary is unverified.
+The GoDaddy hosted-database panel states that Preview and Published use the same managed MySQL database. Its read-only table inventory contains exactly nine tables: `pc_matrix_inbox`, `pc_matrix_migrations`, `pc_matrix_records`, `pc_matrix_stores`, `personal_consultant_archive_tombstones`, `personal_consultant_archives`, `personal_consultant_matrix_ingress`, `personal_consultant_matrix_outbox` and `personal_consultant_state`. All names are specific to this application; no other table appeared in the managed database inventory. No row data, schema field details, secret values or export were opened. The panel did not expose a database ID or owner principal, so this is a dashboard-scoped ownership observation rather than a credential-level ownership proof.
+
+The current saved active Codex model settings have been read without exporting conversation content: Head/specialists and Critic both use `gpt-6-astra` / `xhigh`, with Balanced speed. The inactive Claude branch remains unknown. Before the eventual reset, verify selected-provider grants can be recovered or reauthorized and use the approved replacement cutover package to target only the nine recorded tables. No executable DROP statement or deletion command is provided because reset is outside this audit.
 
 Other GoDaddy apps, their data, shared/unidentified tables, domains and credentials are outside scope. If attachment or ownership is ambiguous, stop that deletion and ask about the exact ambiguous resource. Do not interpret an app attachment as ownership of everything in a database.
 
