@@ -1,6 +1,6 @@
 # Proposed architecture
 
-Browser-voice reconciliation, 14 September 2026; Preview-activation reconciliation, 15 September 2026. The named GoDaddy app's Preview deployment and owned migration are observed. Its host-owned development `NODE_ENV` requires a NanoDuck production-mode override before Google sign-in can be verified. Publication, a real consultation and legacy-data erasure remain separate gates.
+Browser-voice reconciliation, 14 September 2026; Preview-activation reconciliation, 15 September 2026. The named GoDaddy app's Preview deployment and owned migration are observed. The deployed NanoDuck production-mode override takes precedence over host-owned development `NODE_ENV`; a private Chrome browser reached first-use consent and an existing private Safari session reached Settings, but fresh Google OAuth remains a separate verification. Publication, a real consultation and legacy-data erasure remain separate gates.
 
 ## One application with durable work
 
@@ -49,7 +49,7 @@ Before cutover, take a content-free saved-settings snapshot and verify the exact
 
 Retain complete saved conversations, protected owner-generated image attachments, sources, settings, the owner's single private database-stored runtime-instructions document and run state. Whole-conversation export/delete are owner actions. Sanitize rendered model content and links. Keep public code separate from private runtime state. HTTPS and protected server storage replace the Matrix transport; do not claim device-to-device E2EE for this architecture.
 
-The [deployment boundary](deployment-boundary.md) names the only allowed target. The source switch, Preview secrets, owned migration and encrypted instruction bootstrap are evidenced on that app; the Preview retains all nine legacy tables. The Google callback is configured, but hosted Google sign-in must be verified after the NanoDuck production-mode override takes effect. Provider reauthorization/preflight, streaming behavior, a real consultation, browser voice, publication and legacy-data erasure remain release evidence to obtain.
+The [deployment boundary](deployment-boundary.md) names the only allowed target. The source switch, Preview secrets, owned migration and encrypted instruction bootstrap are evidenced on that app; the Preview retains all nine legacy tables. The deployed production-mode override has reached private browser sessions, but a fresh Google callback has not yet been observed. Provider reauthorization/preflight, streaming behavior, a real consultation, browser voice, publication and legacy-data erasure remain release evidence to obtain.
 
 ## External capability references
 
