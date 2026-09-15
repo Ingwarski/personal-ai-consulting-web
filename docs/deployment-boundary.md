@@ -1,12 +1,12 @@
 # Deployment boundary
 
-Read-only boundary audit updated 14 September 2026. No GoDaddy changes were made.
+Deployment boundary updated 15 September 2026. The only completed target mutation is the GitHub-source switch described below.
 
-The authenticated GoDaddy dashboard identifies **Personal AI Consulting Group**, app ID `wy2v0putg6`, hostname `wy2v0putg6.c35.airoapp.ai`, source `Ingwarski/personal-ai-consulting-group-godaddy`, branch `main`, Node.js 22 and Europe region. On 14 September, the Published surface was healthy at commit `72265acf8b61d8b7f0954f0fdc29b5442a6b7cb5`; Preview remained out of sync with `main`. This is deployment metadata, not a diagnosis of runtime behavior.
+The authenticated GoDaddy dashboard identifies **Personal AI Consulting Group**, app ID `wy2v0putg6`, hostname `wy2v0putg6.c35.airoapp.ai`, Node.js 22 and Europe region. On 15 September, its GitHub integration was switched to `Ingwarski/personal-ai-consulting-web` on `main`, replacing only this app's future source. Preview is not yet synchronized; the published surface remains the prior application. No secret, table, row, preview build or publication changed in that switch.
 
-The reviewed local checkout is `49c7ad9a0b3033e9437e79cd98ed5d35e71cfced`, on `codex/matrix-connection-20260906`, four commits ahead of its tracked remote at initial inspection. Its clean state does not prove deployment. The old checkout and its Git references were not changed.
+The 14 September local checkout observation of `49c7ad9a0b3033e9437e79cd98ed5d35e71cfced` on `codex/matrix-connection-20260906` is historical evidence only. It neither proves the replacement deployment nor authorizes a change to the old checkout.
 
-The user permits erasure of this app and its database to use the replacement. This read-only audit does not perform that erasure. Any reset, migration, publication or credential change remains a separately authorized action after the replacement cutover package is ready.
+The user permits erasure of this app and its database to use the replacement, while prohibiting changes to every other GoDaddy app and resource. The current cutover preserves the nine legacy tables until the replacement has passed its required hosted checks. The startup migration is idempotent and creates or updates only `nanoduck_*` tables plus its encrypted owner-instruction record; it does not read, migrate or delete the legacy tables.
 
 The GoDaddy hosted-database panel states that Preview and Published use the same managed MySQL database. Its read-only table inventory contains exactly nine tables: `pc_matrix_inbox`, `pc_matrix_migrations`, `pc_matrix_records`, `pc_matrix_stores`, `personal_consultant_archive_tombstones`, `personal_consultant_archives`, `personal_consultant_matrix_ingress`, `personal_consultant_matrix_outbox` and `personal_consultant_state`. All names are specific to this application; no other table appeared in the managed database inventory. No row data, schema field details, secret values or export were opened. The panel did not expose a database ID or owner principal, so this is a dashboard-scoped ownership observation rather than a credential-level ownership proof.
 

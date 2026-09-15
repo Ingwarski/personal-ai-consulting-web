@@ -49,7 +49,7 @@ Before cutover, take a content-free saved-settings snapshot and verify the exact
 
 Retain complete saved conversations, protected owner-generated image attachments, sources, settings, the owner's single private database-stored runtime-instructions document and run state. Whole-conversation export/delete are owner actions. Sanitize rendered model content and links. Keep public code separate from private runtime state. HTTPS and protected server storage replace the Matrix transport; do not claim device-to-device E2EE for this architecture.
 
-The [deployment boundary](deployment-boundary.md) names the only allowed target. Database/table ownership, runtime lifecycle, storage durability, streaming behavior and provider reauthorization remain release evidence to obtain. No GoDaddy migration, deployment or data operation is included in this phase.
+The [deployment boundary](deployment-boundary.md) names the only allowed target. Database/table ownership, runtime lifecycle, storage durability, streaming behavior and provider reauthorization remain release evidence to obtain. The owner authorized deployment only to that named app and its owned database; the source switch is complete, while secrets, migration, preview build, publication and legacy-data erasure remain separately evidenced cutover steps.
 
 ## External capability references
 
